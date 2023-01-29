@@ -1,5 +1,5 @@
 import './globals.css'
-
+import NavBar from './navBar'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -8,7 +8,10 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <NavBar/>
+        {children}
+      </body>
     </html>
   )
 }
